@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b72">
+  <meta name="description" content="AICJ Searchingをスマートフォンで使うための案内ページです。">
+  <title>AICJ Searching | アプリ案内</title>
+  <style>
+    :root{
+      --navy:#123b72; --blue:#2367c9; --sky:#eaf2ff; --ink:#17243a;
+      --muted:#65748b; --line:#e3eaf4; --white:#fff; --bg:#f5f8fc;
+      --green:#0c8b68; --shadow:0 18px 50px rgba(22,55,105,.10);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;color:var(--ink);background:linear-gradient(180deg,#edf4ff 0,#f7f9fc 360px,var(--bg) 100%);line-height:1.65}
+    a{color:inherit}
+    .wrap{width:min(920px,calc(100% - 32px));margin:0 auto}
+    header{padding:22px 0 12px;display:flex;align-items:center;gap:12px}
+    .logo{width:46px;height:46px;border-radius:14px;background:var(--navy);color:white;display:grid;place-items:center;font-weight:900;letter-spacing:-1px;box-shadow:0 8px 18px #123b7230}
+    .brand{font-weight:800;letter-spacing:.02em}.brand small{display:block;color:var(--muted);font-weight:500;font-size:12px}
+    .hero{padding:42px 0 26px;text-align:center}
+    .eyebrow{display:inline-block;background:#dce9ff;color:var(--navy);font-weight:700;font-size:12px;padding:6px 12px;border-radius:999px}
+    h1{font-size:clamp(28px,5vw,46px);line-height:1.2;margin:18px 0 12px;letter-spacing:-.04em}
+    .lead{color:var(--muted);max-width:620px;margin:0 auto}
+    .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:25px 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border-radius:14px;padding:14px 20px;font-weight:800;min-height:52px;border:1px solid transparent;transition:.15s}
+    .btn.primary{background:var(--navy);color:white;box-shadow:0 9px 20px #123b7228}
+    .btn.secondary{background:white;border-color:var(--line);color:var(--navy)}
+    .btn:active{transform:translateY(1px)}
+    .note{font-size:12px;color:var(--muted)}
+    .panel{background:white;border:1px solid var(--line);border-radius:24px;padding:clamp(18px,4vw,30px);box-shadow:var(--shadow);margin:18px 0}
+    .panel h2{margin:0 0 8px;font-size:22px}
+    .sub{color:var(--muted);margin:0 0 20px}
+    .platforms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .platform{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fff}
+    .platform .head{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;margin-bottom:10px}
+    .device-icon{width:38px;height:38px;border-radius:12px;background:var(--sky);display:grid;place-items:center;font-size:20px}
+    ol{padding-left:22px;margin:12px 0}li{margin:8px 0}
+    .tip{background:#f0f6ff;border-radius:12px;padding:12px 14px;color:#314c73;font-size:13px;margin-top:12px}
+    .warning{background:#fff8e9;border:1px solid #f5e3b9;border-radius:14px;padding:14px;color:#73541a;font-size:13px}
+    .faq details{border-top:1px solid var(--line);padding:15px 0}
+    .faq summary{font-weight:750;cursor:pointer}
+    .faq p{color:var(--muted);margin:10px 0 0}
+    footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 0 40px}
+    .hidden{display:none!important}
+    @media(max-width:650px){.platforms{grid-template-columns:1fr}.hero{padding-top:30px}.panel{border-radius:18px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">AI</div>
+      <div class="brand">AICJ SEARCHING<small>SEARCH • DISCOVER • CONNECT</small></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <span class="eyebrow">SCHOOL SEARCH PORTAL</span>
+        <h1>AICJ Searchingを<br>スマホでも使おう。</h1>
+        <p class="lead">ホーム画面に追加すると、次回からアイコンをタップしてすぐに開けます。</p>
+        <div class="actions">
+          <a class="btn primary" href="https://sites.google.com/view/aicj-searching/home" target="_blank" rel="noopener">AICJ Searchingを開く ↗</a>
+          <a class="btn secondary" href="#install">ホーム画面に追加する</a>
+        </div>
+        <p class="note">※この案内ページ自体をアプリとしてインストールするのではなく、AICJ Searchingへのショートカットを作成します。</p>
+      </section>
+
+      <section class="panel" id="install">
+        <h2 id="guide-title">ホーム画面に追加する方法</h2>
+        <p class="sub" id="guide-sub">お使いの端末に合わせて手順を確認してください。</p>
+
+        <div class="platforms">
+          <article class="platform" id="ios-card">
+            <div class="head"><span class="device-icon"></span> iPhone / iPad</div>
+            <ol>
+              <li>上の「AICJ Searchingを開く」をタップし、<strong>Safari</strong>で開きます。</li>
+              <li>Safari下部（または上部）の<strong>共有ボタン</strong>（四角から矢印）をタップ。</li>
+              <li>メニューを下へスクロールして<strong>「ホーム画面に追加」</strong>を選びます。</li>
+              <li>名前を「AICJ Searching」にして、右上の<strong>「追加」</strong>をタップ。</li>
+            </ol>
+            <div class="tip">追加後、ホーム画面のアイコンからサイトを開けます。iPhoneではSafariを使って操作してください。</div>
+          </article>
+
+          <article class="platform" id="android-card">
+            <div class="head"><span class="device-icon">🤖</span> Android</div>
+            <ol>
+              <li>上の「AICJ Searchingを開く」をタップし、<strong>Chrome</strong>で開きます。</li>
+              <li>Chrome右上の<strong>︙</strong>（メニュー）をタップ。</li>
+              <li><strong>「ホーム画面に追加」</strong>または<strong>「アプリをインストール」</strong>を選びます。</li>
+              <li>表示に従って<strong>「追加」／「インストール」</strong>をタップ。</li>
+            </ol>
+            <div class="tip">機種やChromeの状態によって、メニューの表示名・位置が異なる場合があります。</div>
+          </article>
+        </div>
+        <div class="warning" style="margin-top:16px">
+          <strong>注意：</strong>QRコードやリンクを開くだけでは、ホーム画面への追加は自動完了しません。最後の「追加」操作は本人が行う必要があります。
+        </div>
+      </section>
+
+      <section class="panel faq">
+        <h2>よくある質問</h2>
+        <details>
+          <summary>QRコードはどこに貼ればいい？</summary>
+          <p>この案内ページのURLをQRコードにして、学校内の掲示物や配布資料に載せるのがおすすめです。QRコードを読み取った後、「AICJ Searchingを開く」→ホーム画面に追加、の順で案内できます。</p>
+        </details>
+        <details>
+          <summary>アプリを追加するとサイトの内容も更新される？</summary>
+          <p>はい。これはWebサイトへのショートカットなので、Google Sites側を更新すると、アイコンから開いたときに更新後の内容が表示されます。</p>
+        </details>
+        <details>
+          <summary>App StoreやGoogle Playからダウンロードするアプリ？</summary>
+          <p>いいえ。現時点ではストアアプリではなく、ホーム画面に追加するWebサイトのショートカットです。ストア配布のアプリにするには別途アプリ開発・審査などが必要です。</p>
+        </details>
+      </section>
+    </main>
+    <footer>© AICJ Searching · School use</footer>
+  </div>
+
+  <script>
+    // 端末に合わせて案内の見出しを切り替えます（手順カードは両方表示）。
+    const ua = navigator.userAgent || "";
+    const isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    const isAndroid = /Android/i.test(ua);
+    const title = document.getElementById("guide-title");
+    const sub = document.getElementById("guide-sub");
+    if (isIOS) {
+      title.textContent = "iPhoneでホーム画面に追加";
+      sub.textContent = "Safariで開いて、次の手順を進めてください。";
+      document.getElementById("ios-card").style.borderColor = "#9bbcff";
+    } else if (isAndroid) {
+      title.textContent = "Androidでホーム画面に追加";
+      sub.textContent = "Chromeで開いて、次の手順を進めてください。";
+      document.getElementById("android-card").style.borderColor = "#9bbcff";
+    } else {
+      title.textContent = "スマホでホーム画面に追加";
+      sub.textContent = "iPhoneはSafari、AndroidはChromeで開いてください。";
+    }
+  </script>
+</body>
+</html>
